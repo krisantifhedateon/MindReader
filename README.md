@@ -1,2 +1,3 @@
 # MindReader
-Reads your mind :)
+
+Try it here: 
