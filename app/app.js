@@ -5,7 +5,7 @@ document.getElementById('read_btn_call').addEventListener('click', () =>{
         return
     }
 
-    if(document.getElementById('input_field').value.trim() > 10){
+    if(document.getElementById('input_field').value.trim() > 10 || document.getElementById('input_field').value.trim() < 1){
         document.getElementById('input_field').setAttribute('error-text', 'Between 1 and 10')
         document.getElementById('input_field').error = true
         return
