@@ -60,5 +60,3 @@ document.getElementById('done_reading_dialog').addEventListener('close', () =>{
     document.getElementById('reader_progress').value = 0
     document.querySelector('.text_reader').innerHTML = 'Analyzing brainwaves...'
 })
-
-document.querySelector('.md-dialog').addEventListener('cancel', event => event.preventDefault());
