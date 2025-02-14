@@ -1,0 +1,95 @@
+*{
+    -webkit-tap-highlight-color: transparent;
+    user-select: none;
+    outline: none;
+    touch-action: manipulation;
+    color-scheme: dark;
+  
+}
+
+body{
+    background-color: var(--Surface);
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+}
+
+md-dialog{
+    min-width: 85%;
+}
+
+@media screen and (min-width: 600px){
+    md-dialog{
+        min-width: 400px;
+    }
+}
+
+.main_wrap{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+    padding: 10px;
+}
+
+.container{
+    background-color: var(--Surface-Container);
+    padding: 16px;
+    border-radius: 18px;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    width: 100%;
+    max-width: 400px;
+}
+
+.header p{
+    margin: 0;
+    color: var(--On-Surface);
+    font-family: var(--google-mid);
+    font-size: 24px;
+    text-align: center;
+    padding-bottom: 5px;
+}
+
+.header span{
+    font-family: var(--google-normal);
+    color: var(--On-Surface-Variant);
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header {
+    padding-bottom: 5px;
+}
+
+.input_number_wrap{
+    padding-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.input_number_wrap  md-outlined-text-field{
+    width: 90%;
+}
+
+.read_btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 20px;
+}
+
+#reader_progress{
+    --md-linear-progress-track-height: 15px;
+    --md-linear-progress-track-shape: 15px;
+    --md-linear-progress-active-indicator-height: 15px
+}
+
+.text_reader{
+    text-align: center;
+    padding-top: 20px;
+}

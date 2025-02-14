@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en" sys-font="roboto">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mind reader</title>
+    <script type="module" src="./index.js"></script>
+    <script src="./bundle.js"></script>
+    <link rel="stylesheet" href="ui/fonts.css">
+    <link rel="stylesheet" href="ui/variables.css">
+    <link rel="stylesheet" href="ui/ui.css">
+</head>
+<body>
+    
+    <div class="main_wrap">
+        <div class="container">
+        <div class="header">
+            <p>Mind reader</p>
+            <span>Think of a number between 1 and 10</span>
+        </div>
+    
+        <div class="input_number_wrap">
+            <md-outlined-text-field id="input_field" error-text="Please fill in the field" type="number"></md-outlined-text-field>
+        </div>
+        
+        <div class="read_btn">
+            <md-filled-button id="read_btn_call">Read my mind</md-filled-button>
+        </div>
+
+    </div>
+    </div>
+
+    <md-dialog quick class="md-dialog">
+        <div slot="headline">Reading...</div>
+        <div slot="content">
+            <md-linear-progress value="0" id="reader_progress"></md-linear-progress>
+
+            <div class="text_reader">
+                Analyzing brainwaves...
+            </div>
+        </div>
+    </md-dialog>
+
+    
+    <md-dialog quick id="done_reading_dialog">
+        <div slot="headline">Done!</div>
+        <div slot="content">
+            <span id="guessed_no">You're think of number 5.</span>
+        </div>
+
+        <div slot="actions">
+            <md-text-button onclick="closeDialogDone()">
+                Nice
+            </md-text-button>
+        </div>
+    </md-dialog>
+
+
+    <script src="app/app.js"></script>
+</body>
+</html>
